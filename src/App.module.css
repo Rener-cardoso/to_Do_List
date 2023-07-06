@@ -1,0 +1,81 @@
+main {
+  width: 736px;
+  margin: 0 auto;
+}
+
+main input {
+  height: 54px;
+  width: 100%;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 8px;
+  line-height: 1.4;
+  font-size: 1rem;
+  padding: 1rem;  
+}
+
+.addList {
+  margin-top: -1.6875rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.headerList {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerList strong {
+  font-size: 0.875rem;
+  font-weight: bold;
+
+}
+
+.headerList strong:first-child {
+  color: var(--blue-light);
+}
+
+.headerList strong:last-child {
+  color: var(--purple-light);
+}
+
+.headerList span {
+  font-size: 0.75rem;
+  background: var(--gray-400);
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  padding: 0.2rem 0.4rem;
+  color: var(--gray-100);
+}
+
+.bodyList {
+  border-top: 1px solid var(--gray-400);
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  font-size: 1rem;
+  color: var(--gray-300);
+}
+
+.bodyList {
+  opacity: 0;
+}
+
+.bodyList img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.bodyList p:first-child {
+  font-weight: 700;
+}
+
+.bodyList p:last-child {
+  font-weight: 400;
+}

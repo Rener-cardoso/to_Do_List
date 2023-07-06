@@ -1,0 +1,64 @@
+.task {
+  margin-top: 1.5rem;
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+
+.checkTask {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.buttonNotChecked {
+  border: 2px solid var(--blue-light);
+  background: none;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--gray-500);
+}
+
+.buttonChecked {
+  color: var(--gray-100);
+  background: var(--purple-light);
+  border: none;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.taskChecked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.taskNotChecked {
+  color: var(--gray-100);
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  color: var(--gray-300);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.remove:hover {
+  color: var(--red);
+  background: var(--gray-400)
+}

@@ -76,7 +76,8 @@ export function App() {
         <input
           placeholder='Adicione uma nova tarefa'
           onChange={handleOnChange}
-          value={newTask.content || ""} 
+          value={newTask.content || ""}
+          required 
         />
 
         <Button onClick={handleCreateTask}/>

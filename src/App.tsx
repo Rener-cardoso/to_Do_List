@@ -30,6 +30,10 @@ export function App() {
   const taskComplete = tasks.filter(task => task.isChecked == true).length
 
   function handleCreateTask() {
+    if(newTask.content = "") {
+      return alert("Campo obrigatório!!")
+    }
+
     setTasks([...tasks, newTask])
 
     setNewTask({content: ""} as TaskProps)
@@ -77,7 +81,6 @@ export function App() {
           placeholder='Adicione uma nova tarefa'
           onChange={handleOnChange}
           value={newTask.content || ""}
-          required 
         />
 
         <Button onClick={handleCreateTask}/>
